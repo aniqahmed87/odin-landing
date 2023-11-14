@@ -1,0 +1,46 @@
+html{
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    border: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.set-vw80{
+    width: 80vw;
+}
+
+.main-logo{
+    width: 100px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    border: 1px green solid;
+}
+.nav-links{
+    display: flex;
+    color: white;
+    
+}
+
+.book-section{
+    height: 300px;
+    width: 80vw;
+    background-color: #1F2937;
+}
