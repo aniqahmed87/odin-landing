@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navbar-container">
@@ -26,11 +26,100 @@
             </ul>
         </div>
     </div>
-
     <div class="main-container">
+        <div class="main">
+            <div class="main-sub">
+                <h1 class="main-heading">
+                    ...start your turbulence-free journey...
+                </h1>
+                <div class="inputBooking">
 
+                    <div class="waySelect">
+                        <span class="labelJourney">Select Journey Type</span>
+                        <label for="oneWay">
+                            One-Way
+                            <input id="oneWay" type="radio", name="waySelect">
+                        </label>
+                        <label for="twoWay">
+                            Two-Way
+                            <input id="twoWay" type="radio", name="waySelect">
+                        </label>
+                    </div>
+                
+                    <div class="dateSelect">
+                        <label for="fromDate">
+                            Departure Date
+                            <input class = "formatInput" id="fromDate" type="date">
+                        </label>
 
+                        <label for="returnDate">
+                            Return Date
+                            <input class = "formatInput" id="returnDate" type="date">
+                        </label>
+                    </div>
+                    <div class="placeAndPassenger">
+                        <div class="placeSelect">
+                            <label for="fromBox">
+                                From
+                                <input class = "formatInput" id="fromBox" type="text", placeholder="Flying From">
+                            </label>
 
+                            <label for="toBox">
+                                Destination
+                                <input class = "formatInput" id="toBox" type="text", placeholder="Flying To">
+                            </label>
+                        </div>
+
+                        <div class="passengerSelect">
+                            <label for="adultCount">
+                                Adults
+                                <select class = "formatInput" name="adultCount" id="adultCount">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
+                            <label for="childCount">
+                                Child
+                                <select class = "formatInput" name="childCount" id="childCount">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
+                            <label for="infantCount">
+                                Infant
+                                <select class = "formatInput" name="infantCount" id="infantCount">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="buttonSelect">
+                        <button>Clear</button>
+                        <button>Search</button>
+                    </div>
+
+                </div>
+            
+            </div>
+            <div class="main-sub">
+                <span>Explore Destinations</span>
+                <div class="card-destination">
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

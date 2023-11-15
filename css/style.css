@@ -34,14 +34,6 @@ a{
     
 }
 
-.navbar{
-    display: flex;
-    width: 80vw;
-    align-items: center;
-    justify-content: space-between;
-    /* position: fixed; */
-}
-
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -50,6 +42,14 @@ a{
     border-bottom: 1px #ffffff00 solid;
     box-shadow: 0px 0px 5px 1px rgb(109, 250, 156, 0.5);
     position: relative;
+}
+
+.navbar{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
 }
 
 .nav-links{
@@ -61,17 +61,6 @@ a{
     transition: all 0.3s;
 }
 
-.nav-links li{
-    width: max-content;
-    text-align: center;
-    border-radius: 8px;
-    
-}
-
-.nav-links li:hover{
-    background-color: rgb(4, 37, 4);
-    color: white;
-}
 .nav-icon{
     display: block;
     filter:grayscale(50%);
@@ -83,11 +72,148 @@ a{
 
 .nav-icon:hover
 {
-    filter:grayscale(0%)
+    filter:grayscale(0%);
 }
 .main-container{
-    
+    display: flex;
+    justify-content: center;
     height: 500px;
-    background-color: #1F2937;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    /* border: 1px white solid; */
+    padding: 4px;
+    gap: 4px;
+}
+
+.main-sub{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    /* border: 1px lightcoral solid; */
+}
+
+.main-heading{
     
+    text-shadow: rgba(136, 199, 167, 0.75) 1px 0 10px;
+    color: #F9FAF8;
+
+    font-size: 48px;
+    font-weight:bolder;
+    text-align: left;
+    line-height: 48px;
+    /* border: 1px lightblue solid; */
+}
+
+.inputBooking{
+    display: flex;
+    background-color: #ececea6e ;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+
+.formatInput{
+    display: block;
+    font-size:16px ;
+    height: 28px;
+    padding: 4px 18px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+
+.waySelect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+}
+.dateSelect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+}
+
+#fromDate, #returnDate{
+    width: 200px;
+    min-width: 200px;
+    
+}
+
+/* .placeSelect label, .dateSelect label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: auto;
+    gap: 4px;
+} */
+
+.labelJourney{
+    font-weight: bold;
+
+}
+#fromBox, #toBox{
+    width: 300px;
+    min-width: 300px;
+}
+.placeAndPassenger{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1; gap: 8px;
+}
+.placeSelect *{
+    /* flex: 1; */
+}
+.passengerSelect{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    flex: 1;
+}
+.buttonSelect{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+button{
+    
+    font-size: 18px;
+    width: 100px;
+    padding: 8px 4px;;
+    background-color: #009b7d;
+    color: white;
+    box-shadow: 3px 3px 10px 0.5px black;
+    border: none;
+    border-radius: 18px;
+    transition: all ease-in 0.2s;
+    margin-bottom: 4px;
+
+}
+button:hover{
+    box-shadow: 3px 3px 5px 0.5px rgb(255, 255, 255);
+    
+}
+
+
+
+
+
+.inputBooking *{
+    border: 0.5px lightgreen solid;
 }
