@@ -74,18 +74,17 @@ a{
 {
     filter:grayscale(0%);
 }
-.main-container{
+.main-background{
     display: flex;
     justify-content: center;
-    height: 500px;
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-
+    padding: 18px 0px;
 }
-.main{
+.main-container{
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
-    /* border: 1px white solid; */
+    border: 1px solid white;
     padding: 4px;
     gap: 4px;
 }
@@ -95,7 +94,7 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    /* border: 1px lightcoral solid; */
+    border: 0.5px lightcoral solid;
 }
 
 .main-heading{
@@ -107,7 +106,7 @@ a{
     font-weight:bolder;
     text-align: left;
     line-height: 48px;
-    /* border: 1px lightblue solid; */
+    margin-top: 0;
 }
 
 .inputBooking{
@@ -122,21 +121,21 @@ a{
 }
 
 
-.formatInput{
-    display: block;
-    font-size:16px ;
-    height: 28px;
-    padding: 4px 18px;
-    border-radius: 8px;
-    border: 0px;
-}
-
-
 .waySelect{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 12px;
     
+}
+
+.labelJourney{
+    font-weight: bold;
+    color: #009b7d;
+    background-color: azure;
+    padding: 0 8px;
+    border-radius: 12px;
+
 }
 .dateSelect{
     display: flex;
@@ -146,45 +145,52 @@ a{
 }
 
 #fromDate, #returnDate{
-    width: 200px;
+    
     min-width: 200px;
     
 }
 
-/* .placeSelect label, .dateSelect label{
+.labelForText{
+    flex:auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    flex: auto;
     gap: 4px;
-} */
-
-.labelJourney{
-    font-weight: bold;
-
 }
+
+
 #fromBox, #toBox{
-    width: 300px;
+    
     min-width: 300px;
 }
 .placeAndPassenger{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    flex: 1; gap: 8px;
+    align-items: flex-start;
+    flex: 1;
+    gap: 8px;
 }
-.placeSelect *{
-    /* flex: 1; */
-}
+
 .passengerSelect{
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
     gap: 4px;
-    padding: 4px;
     border-radius: 8px;
     flex: 1;
+    padding-left: 16px;
+}
+
+.passengerMaxWidth{
+    max-width: 80px;
+}
+.placeSelect{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 2;
+    
 }
 .buttonSelect{
     display: flex;
@@ -210,10 +216,34 @@ button:hover{
     
 }
 
-
-
-
+.formatInput{
+    /* display: block; */
+    
+    font-size:16px ;
+    height: 28px;
+    padding: 4px 18px;
+    border-radius: 18px;
+    border: 0px;
+    flex-grow: 1;
+}
 
 .inputBooking *{
+    /* border: 0.5px lightgreen solid; */
+}
+
+.main-sub-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     border: 0.5px lightgreen solid;
 }
+
+.main-image{
+    width:100%;
+    
+}
+
+/* .tagline{
+    color: white;
+    font-size: 38px;
+} */
