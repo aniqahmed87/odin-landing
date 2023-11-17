@@ -74,17 +74,19 @@ a{
 {
     filter:grayscale(0%);
 }
-.main-background{
+.format-background{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     padding: 18px 0px;
+}
+.main-bg-color{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
 .main-container{
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
-    border: 1px solid white;
     padding: 4px;
     gap: 4px;
 }
@@ -93,8 +95,7 @@ a{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1;
-    border: 0.5px lightcoral solid;
+    flex: 2;
 }
 
 .main-heading{
@@ -234,16 +235,71 @@ button:hover{
 .main-sub-2{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    border: 0.5px lightgreen solid;
-}
 
-.main-image{
-    width:100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.5px lightgreen solid; */
+    background-image: url(../assets/clouds.jpeg);
+    background-size: 200%;
+    border-radius: 12px;
     
 }
 
-/* .tagline{
-    color: white;
-    font-size: 38px;
-} */
+.main-image{
+    transition: all ease-in 0.3s;
+}
+
+.main-image:hover{
+    filter: brightness(130%);
+}
+
+/* Second Section starts here */
+.middle-bg-color{
+    background-color: white;
+} 
+
+.middle-container h2{
+    font-family: "Dancing Script", sans-serif;
+    font-size: 36px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.middle-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80vw;
+    border: 1px solid green;
+    align-content: center;
+    height: 500px;
+    padding: 4px;
+    gap: 4px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    border: 1px black solid;
+    flex: 1;
+}
+.middle-card{
+    display: flex;
+    flex-flow: column wrap;
+    width: 250px;
+    height: 350px;
+    border: 1px solid green;
+    gap: 8px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.middle-card img{
+    border-radius: 8px;
+    
+    width: 100%;
+    height: auto;
+}
