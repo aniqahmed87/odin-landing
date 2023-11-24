@@ -9,3 +9,6 @@ Iamge credits:
 <a href="https://www.flaticon.com/free-icons/delay" title="delay icons">Delay icons created by Freepik - Flaticon</a>
 
 <a href="https://na.panasonic.com/us/inflight-solutions" title="Inflight-enterntainment">Inflight entertainment picture</a>
+
+Photo by The Castlebar: https://www.pexels.com/photo/close-up-of-a-person-cutting-the-meat-on-the-plate-19119650/
+

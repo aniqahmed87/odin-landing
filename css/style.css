@@ -78,7 +78,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 18px 0px;
+    padding: 80px 0px;
 }
 .main-bg-color{
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
@@ -198,7 +198,8 @@ a{
     gap: 8px;
     justify-content: flex-start;
 }
-button{
+
+.buttonSelect button{
     
     font-size: 18px;
     width: 100px;
@@ -212,7 +213,7 @@ button{
     margin-bottom: 4px;
 
 }
-button:hover{
+.buttonSelect button:hover{
     box-shadow: 3px 3px 5px 0.5px rgb(255, 255, 255);
     
 }
@@ -228,12 +229,8 @@ button:hover{
     flex-grow: 1;
 }
 
-.inputBooking *{
-    /* border: 0.5px lightgreen solid; */
-}
-
 .main-sub-2{
-    flex: 1;
+    flex: 2;
     display: flex;
 
     justify-content: center;
@@ -242,6 +239,7 @@ button:hover{
     background-image: url(../assets/clouds.jpeg);
     background-size: 200%;
     border-radius: 12px;
+    
     
 }
 
@@ -254,7 +252,7 @@ button:hover{
 }
 
 /* Second Section starts here */
-.middle-bg-color{
+.middle-bg-color, .fourth-bg-color{
     background-color: white;
 } 
 
@@ -269,11 +267,11 @@ button:hover{
     display: flex;
     flex-flow: column wrap;
     width: 80vw;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     align-content: center;
-    height: 500px;
+    /* height: 500px; */
     padding: 4px;
-    gap: 4px;
+    gap: 50px;
 }
 
 
@@ -281,9 +279,9 @@ button:hover{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 32px;
     align-items: center;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     flex: 1;
 }
 .middle-card{
@@ -291,15 +289,122 @@ button:hover{
     flex-flow: column wrap;
     width: 250px;
     height: 350px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     gap: 8px;
     font-size: 22px;
     text-align: center;
 }
 
 .middle-card img{
-    border-radius: 8px;
+    border-radius: 16px;
     
     width: 100%;
     height: auto;
+}
+
+
+/* Third Section starts here */
+.third-bg-color{
+    background-color: #E5E7EB;
+} 
+
+.third-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    align-content: center;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.swipe{
+    
+    font-size: 80px;
+    color: rgba(47, 79, 79, 0.747);
+    background-color: rgb(220, 228, 245, 0.8);
+    padding: 0px 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    
+}
+
+.swipe:hover{
+    color: rgba(47, 79, 79);
+    background-color: rgb(220, 228, 245);
+}
+
+.quote-card{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote-poc{
+    font-weight: bold;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+/* Footer styles */
+
+.fourth-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    padding: 18px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fourth-container h3{
+    margin-bottom: 0;
+}
+
+.fourth-container h4{
+    margin-top: 4px;
+    font-weight: normal;
+}
+.fourth-container button{
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 3em;
+    border-radius: 8px;
+    padding: 0px 18px;
+    border-color: white;
+}
+
+/* Footer styles */
+.footer-padding{
+    padding: 15px;
+}
+
+.footer-logo{
+    height: auto;
+    width: 150px;
+    
+}
+
+.footer-text{
+    color: white;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.footer-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
